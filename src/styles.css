@@ -1,0 +1,18 @@
+body {
+  background: linear-gradient(to right, #137ed9, #00d7ff);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  background-color: #000000;
+  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EQ8Uu6D/madrid-skyline-cityscape-timelapse-from-day-to-night-aerial-view-of-skyscrapers-business-area_sgezqggge_thumbnail-full05.png");
+  background-size: cover;
+  color: #23272a;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 0.875em;
+  background-color: black;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}

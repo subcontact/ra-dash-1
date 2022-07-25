@@ -1,0 +1,17 @@
+@import "./mixins.scss";
+body {
+  background-color: #f8f8f8;
+}
+.products {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  @include mq("phone-wide", max) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  grid-row-gap: 25px;
+  grid-auto-rows: minmax(100px, auto);
+}

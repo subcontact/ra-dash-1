@@ -1,0 +1,15 @@
+{
+  "title": "Material demo",
+  "description": "https://github.com/mui-org/material-ui/blob/master/docs/src/pages/demos/text-fields/TextFields.js",
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "brcast": "3.0.1",
+    "classnames": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "keywords": [],
+  "name": "gestion-continua-credit-analysis"
+}

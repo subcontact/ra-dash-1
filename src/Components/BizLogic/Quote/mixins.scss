@@ -1,0 +1,52 @@
+//Media Queries
+//USO:
+//	.site-header {
+//		padding: 2rem;
+//		font-size: 1.8rem;
+//		@include mq('tablet-wide') {
+//			padding-top: 4rem;
+//			font-size: 2.4rem;
+//		}
+//	}
+
+$breakpoints: (
+  "phone": 400px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "tablet-wide": 1024px,
+  "desktop": 1248px,
+  "laptop": 1366px,
+  "desktop-wide": 1440px,
+  "desjtio-wider": 1920px
+);
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+//Aspect Ratio
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
